@@ -76,9 +76,24 @@
       <div class="row">
         <div class="col"></div>
         <div class="col d-flex justify-content-end">
-          <button id="navbar-mob-btn" class="navbar-mob-btn" type="button">
+          <button id="navbar-mob-btn" class="navbar-mob-btn" type="button" onclick="toggleMenu()">
             <img src="./assets/menu.png" />
           </button>
+        </div>
+      </div>
+      <div class="menu-area">
+        <div class="row">
+          <ul class="mob-ul">
+            <li class="active">
+              <span>Our Manisfesto</span>
+            </li>
+            <li>
+              <span>Brand Experience</span>
+            </li>
+            <li>
+              <span> Logo Philosophy </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -293,6 +308,11 @@
           perturbance: 0.6,
         });
       });
+
+      function toggleMenu() {
+        $(".menu-area").toggleClass("show-nav");
+        console.log("object");
+      }
     </script>
 
     <script>

@@ -30,11 +30,13 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   height: inherit;
   width: 100%;
+  top: 10% !important;
 }
 
 .vanta-canvas {
   height: inherit;
   width: 100vw;
+  top: 10% !important;
 }
 
 .navbar-text {
@@ -591,6 +593,15 @@ nav {
     z-index: 2;
 
     height: 10rem !important;
+  }
+
+  .mob-ul {
+    opacity: 0;
+    transition: 2s;
+  }
+
+  .show-nav .mob-ul {
+    opacity: 1 !important;
   }
 
   .mobile-navigation {
